@@ -1,0 +1,21 @@
+.machine-wrapper {
+  width: 328px;
+  background: #2e3338;
+  border-radius: 15px;
+  padding: 57px 23px 23px 25px;
+  transition: all 0.3s ease-in-out;
+
+  .machine_info {
+    width: 156px;
+    flex-direction: column;
+    margin-bottom: 11px;
+    &__detail {
+      margin-top: 20px;
+    }
+  }
+
+  &:hover {
+    transform: scale(103%, 103%);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+}

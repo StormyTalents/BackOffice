@@ -1,0 +1,11 @@
+.button-content {
+  display: flex;
+  div {
+    &:first-child {
+      margin-top: 2px;
+    }
+    &:last-child {
+      margin-top: 6px;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import "../../../styles/modules/mixin";
+
+.sidebar-wrapper {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  grid-gap: 36px;
+  padding: 26px 31px;
+  border-radius: 15px;
+  top: 20px;
+  left: 30px;
+  background: white;
+  min-height: 678px;
+
+  @include media-query("laptop") {
+    top: 60px;
+    left: 30px;
+  }
+  @include media-query("laptop-l") {
+    top: 127px;
+    left: 60px;
+  }
+  h1 {
+    padding: 0 11px;
+  }
+  .sidebar_account {
+    background: #f1f1f1;
+    padding: 8px 26.5px;
+    border-radius: 7px;
+    &__kingsize {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 4px;
+    }
+    span {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .sidebar_menu {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 8px;
+    padding: 8px 16px;
+    &__item {
+      color: #2e3338;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 8px 0;
+      border-radius: 7px;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background: #f1f1f1;
+        padding: 8px 5px;
+      }
+    }
+  }
+}
