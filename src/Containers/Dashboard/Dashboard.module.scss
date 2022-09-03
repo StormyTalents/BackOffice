@@ -1,0 +1,18 @@
+@import "../../styles/modules/mixin";
+
+.dashboard-wrapper {
+  .machine-title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_content {
+    display: grid;
+    column-gap: 87px;
+    row-gap: 45px;
+    grid-template-columns: auto;
+    @include media-query("laptop-l") {
+      grid-template-columns: auto auto;
+    }
+  }
+}

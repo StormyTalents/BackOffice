@@ -1,0 +1,10 @@
+@import "../../styles/modules/mixin";
+
+.sign-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include media-query("laptop") {
+    flex-direction: row;
+  }
+}
