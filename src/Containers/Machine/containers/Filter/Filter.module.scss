@@ -1,0 +1,24 @@
+.filter-wrapper {
+  .filter_title {
+    padding-bottom: 13px;
+  }
+  .filter_content {
+    background: #2e3338;
+    padding: 20px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 85px;
+    .filter_option__header {
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .filter_option__content {
+      text-align: center;
+      padding: 1px 7px;
+      background: #7d7d7d;
+      color: white;
+      border-radius: 5px;
+    }
+  }
+}
